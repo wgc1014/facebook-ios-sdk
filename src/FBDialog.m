@@ -41,6 +41,19 @@ static BOOL FBIsDeviceIPad() {
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+// FLIPBOARD START
+
+@interface FBDialog ()
+
+- (void)bounce2AnimationStopped;
+- (void)deviceOrientationDidChange:(void*)object;
+- (void)keyboardWillShow:(NSNotification*)notification;
+- (void)keyboardWillHide:(NSNotification*)notification;
+
+@end
+
+// FLIPBOARD END
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation FBDialog
 
